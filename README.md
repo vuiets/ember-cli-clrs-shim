@@ -1,27 +1,29 @@
-# Ember-cli-clrs-shim
+# ember-cli-clrs-shim
 
-This README outlines the details of collaborating on this Ember addon.
+> :art: Brings [@mrmrs](https://github.com/mrmrs)'s [color](https://github.com/mrmrs/colors) palette to your Ember app.
 
-## Installation
+### Usage
 
-* `git clone <repository-url>` this repository
-* `cd ember-cli-clrs-shim`
-* `npm install`
-* `bower install`
+```
+npm install --save-dev https://github.com/wizvishak/ember-cli-clrs-shim.git
+ember generate ember-cli-clrs-shim
+```
 
-## Running
+This will copy the css files to your Ember app's `vendor` directory and import it to your app's `vendor.css`.
 
-* `ember serve`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
+```
+vendor/
+ ├─ colors.css
+ └─ colors.min.css
+```
 
-## Running Tests
+### Upgrade
 
-* `npm test` (Runs `ember try:each` to test your addon against multiple Ember versions)
-* `ember test`
-* `ember test --server`
+Same as above. 
 
-## Building
+### Thanks To
+[@mrmrs/colors](https://github.com/mrmrs/colors)
 
-* `ember build`
+### License
 
-For more information on using ember-cli, visit [http://ember-cli.com/](http://ember-cli.com/).
+MIT
