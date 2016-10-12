@@ -12,10 +12,10 @@ module.exports = {
 		this._super.included.apply(this, arguments);
 
 		// colors.css -> assets/vendor.css
-		this.importTachyons(app);
+		this.importClrs(app);
 	},
 
-	importTachyons(app) {
+	importClrs: function (app) {
 		var options = (app && app.options['Clrs']) || {},
 			cssOption = options.css,
 			importCSS = (cssOption === null || cssOption === undefined) ? defaults.css : cssOption;
