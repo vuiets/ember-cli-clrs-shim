@@ -13,8 +13,9 @@
 	"scripts": {
 		"build": "ember build",
 		"start": "ember server",
-		"test:dev": "rm -rf tmp dist && ember build && tree dist/assets -h",
-		"test:prod": "rm -rf tmp dist && ember build --environment production && tree dist/assets -h"
+		"test": "mocha test",
+		"quicktest:dev": "rm -rf tmp dist && ember build && tree dist/assets -h",
+		"quicktest:prod": "rm -rf tmp dist && ember build --environment production && tree dist/assets -h"
 	},
 	"repository": {
 		"type": "git",
@@ -31,6 +32,8 @@
 	"license": "MIT",
 	"devDependencies": {
 		"broccoli-asset-rev": "^2.4.2",
+		"chai": "^1.10.0",
+		"chai-fs": "^0.1.0",
 		"colors.css": "^3.0.0",
 		"ember-cli": "2.8.0",
 		"ember-cli-app-version": "^1.0.0",
@@ -46,7 +49,9 @@
 		"ember-export-application-global": "^1.0.5",
 		"ember-load-initializers": "^0.5.1",
 		"ember-resolver": "^2.0.3",
-		"loader.js": "^4.0.1"
+		"glob": "^7.1.1",
+		"loader.js": "^4.0.1",
+		"mocha": "^3.1.2"
 	},
 	"keywords": [
 		"ember-addon",
